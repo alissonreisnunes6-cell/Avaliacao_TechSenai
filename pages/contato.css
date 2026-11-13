@@ -1,0 +1,8 @@
+/* =========================================
+   14. ESTILOS ADICIONAIS PÁGINA DE CONTATO
+   ========================================= */
+.contact-form .form-subtext {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}

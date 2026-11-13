@@ -1,0 +1,123 @@
+/* =========================================
+   11. ESTILOS DA PÁGINA DE PRODUTOS
+   ========================================= */
+.nav-menu a.active-link {
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+.page-banner {
+    margin-top: 70px;
+    padding: 4.5rem 0 3.5rem;
+    background: linear-gradient(135deg, #0a0f1c 0%, #111827 100%);
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.page-banner h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+}
+
+.page-banner p {
+    color: var(--text-muted);
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+}
+
+.catalog-section {
+    padding: 4rem 0 6rem;
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 3rem;
+}
+
+.filter-btn {
+    background-color: var(--bg-card);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    padding: 0.6rem 1.3rem;
+    border-radius: 25px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--primary-blue);
+    color: var(--bg-dark);
+    border-color: var(--primary-blue);
+}
+
+.product-img {
+    position: relative;
+}
+
+.stock-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: rgba(10, 15, 28, 0.88);
+    color: var(--accent-green);
+    border: 1px solid var(--accent-green);
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.btn-buy {
+    background: linear-gradient(90deg, var(--primary-blue), #0284c7);
+    color: var(--bg-dark);
+    border: none;
+    padding: 0.55rem 1.1rem;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-buy:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 210, 255, 0.35);
+}
+
+/* Notificação Toast (Simulação de Carrinho) */
+.toast {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--bg-card);
+    color: var(--text-main);
+    border-left: 4px solid var(--accent-green);
+    border-top: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 1.4rem;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    font-size: 0.95rem;
+    z-index: 2000;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.35s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSenai | Inovação e Tecnologia de Ponta</title>
+    <!-- Fonte Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">⚡</span>Tech<span class="logo-highlight">[SENAI]</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="pages/produtos.html">Produto</a></li>
+                    <li><a href="pages/sobre.html">Sobre</a></li>
+                    <li><a href="pages/video.html">Vídeo</a></li>
+                    <li><a href="pages/contato.html" class="btn-nav">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão Menu Mobile -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <!-- Seção Início / Carrossel -->
+    <section id="inicio" class="carousel-section">
+        <div class="carousel-container">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active"
+                style="background-image: linear-gradient(rgba(10, 15, 28, 0.75), rgba(10, 15, 28, 0.85)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80');">
+                <div class="container slide-content">
+                    <span class="badge">Nova Geração 2026</span>
+                    <h1>Hardware de Alta Performance para o seu Setup</h1>
+                    <p>Descubra processadores, placas de vídeo e periféricos projetados para máxima velocidade e
+                        eficiência.</p>
+                    <a href="#produto" class="btn-primary">Explorar Produtos</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide"
+                style="background-image: linear-gradient(rgba(10, 15, 28, 0.75), rgba(10, 15, 28, 0.85)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1600&q=80');">
+                <div class="container slide-content">
+                    <span class="badge badge-green">Ofertas Especiais</span>
+                    <h1>Equipamentos Inteligentes e Automação</h1>
+                    <p>Transforme seu ambiente de trabalho e estudos com a melhor curadoria tecnológica do mercado.</p>
+                    <a href="#sobre" class="btn-primary">Conheça a TechSenai</a>
+                </div>
+            </div>
+
+            <!-- Controles do Carrossel -->
+            <button class="carousel-btn prev" id="prevBtn" aria-label="Banner Anterior">&#10094;</button>
+            <button class="carousel-btn next" id="nextBtn" aria-label="Próximo Banner">&#10095;</button>
+
+            <!-- Indicadores -->
+            <div class="carousel-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Benefícios (3 Cards) -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-grid">
+                <!-- Card 1 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚀</div>
+                    <h3>Entrega Rápida e Segura</h3>
+                    <p>Logística inteligente com rastreamento em tempo real e embalagem reforçada para proteger seus
+                        equipamentos.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎧</div>
+                    <h3>Atendimento Especializado</h3>
+                    <p>Suporte técnico formado por especialistas prontos para ajudar você a escolher a configuração
+                        ideal.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">💻</div>
+                    <h3>Variedade Tecnológica</h3>
+                    <p>Do hardware profissional aos acessórios gamers e dispositivos IoT, tudo em um só lugar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Produto (Vitrine) -->
+    <section id="produto" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos <span class="text-highlight">Produtos</span> em Destaque</h2>
+                <p>Seleção exclusiva com garantia oficial e pronta entrega.</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Produto 1 -->
+                <article class="product-card">
+                    <div class="product-img">
+                        <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro-max-plus/mb18250/media-gallery/laptop-dell-pro-max-mb18250nt-bk-ir-fpr-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=320&wid=428&qlt=100,0&resMode=sharp2&size=428,320"
+                            alt="Workstation Pro">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Computadores</span>
+                        <h3>Workstation TechSenai Pro X1</h3>
+                        <p>Ideal para desenvolvimento, renderização 3D e inteligência artificial.</p>
+                        <div class="product-footer">
+                            <span class="price">R$ 8.490,00</span>
+                            <a href="#contato" class="btn-outline">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produto 2 -->
+                <article class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.tcdn.com.br/img/img_prod/1157659/teclado_mecanico_gamer_rgb_knup_22490_1_5587cddfd6afc397f75acde0c08eb692.png"
+                            alt="Teclado Mecânico">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Periféricos</span>
+                        <h3>Teclado Mecânico RGB Switch Blue</h3>
+                        <p>Precisão tátil, estrutura em alumínio aeroespacial e iluminação customizável.</p>
+                        <div class="product-footer">
+                            <span class="price">R$ 459,90</span>
+                            <a href="#contato" class="btn-outline">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Produto 3 -->
+                <article class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.tcdn.com.br/img/img_prod/740836/monitor_concordia_gamer_curvo_ultrawide_uz340_34_wqhd_165hz_1ms_2_hdmi_2_dp_srgb_100_pip_pbp_24379_1_099856ca37af7d4e65856e5fa705a6ee.jpg"
+                            alt="Monitor Ultrawide">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Monitores</span>
+                        <h3>Monitor Ultrawide 34" 165Hz</h3>
+                        <p>Painel IPS curvo com 1ms de resposta e fidelidade de cores sRGB 99%.</p>
+                        <div class="product-footer">
+                            <span class="price">R$ 2.799,00</span>
+                            <a href="#contato" class="btn-outline">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about-section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <span class="badge">Quem Somos</span>
+                <h2>Conectando você ao futuro da <span class="text-highlight">tecnologia</span></h2>
+                <p>A <strong>TechSenai</strong> nasceu com o propósito de democratizar o acesso a equipamentos de
+                    informática, eletrônica e inovação de alto padrão. Unimos curadoria técnica rigorosa com paixão por
+                    engenharia e design.</p>
+                <p>Seja para equipar laboratórios, escritórios corporativos ou montar o setup pessoal dos sonhos, nossa
+                    missão é entregar qualidade, transparência e performance em cada detalhe.</p>
+                <ul class="about-stats">
+                    <li><strong>+15 mil</strong><span>Clientes atendidos</span></li>
+                    <li><strong>99.4%</strong><span>Satisfação garantida</span></li>
+                    <li><strong>24h</strong><span>Envio expresso</span></li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="https://images.stockcake.com/public/3/9/c/39ca2487-9a68-4194-a7c3-5593fcc4f81b_large/high-tech-laboratory-stockcake.jpg"
+                    alt="Laboratório de Tecnologia TechSenai">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Vídeo -->
+    <section id="video" class="video-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Conheça Nossa <span class="text-highlight">Estrutura</span></h2>
+                <p>Assista ao vídeo institucional e veja como testamos e preparamos cada equipamento.</p>
+            </div>
+
+            <div class="video-wrapper">
+                <!-- Iframe responsivo com vídeo demonstrativo de tecnologia -->
+                <iframe src="https://www.youtube.com/embed/5qap5aO4i9A" title="Vídeo Institucional TechSenai"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contact-section">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>Fale com a <span class="text-highlight">TechSenai</span></h2>
+                <p>Tem dúvidas sobre compatibilidade de peças ou deseja um orçamento corporativo? Envie uma mensagem.
+                </p>
+
+                <div class="info-item">
+                    <strong>📍 Endereço:</strong>
+                    <span>Av. da Inovação, 1000 - Distrito Tecnológico</span>
+                </div>
+                <div class="info-item">
+                    <strong>📧 E-mail:</strong>
+                    <span>contato@techsenai.com.br</span>
+                </div>
+                <div class="info-item">
+                    <strong>📞 Telefone / WhatsApp:</strong>
+                    <span>(11) 4002-8922</span>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">Enviar Mensagem</button>
+                <p id="formFeedback" class="form-feedback"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#inicio" class="logo">⚡Tech<span class="logo-highlight">[SENAI]</span></a>
+                <p>Tecnologia e inovação ao seu alcance.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Início</a>
+                <a href="pages/produtos.html">Produto</a>
+                <a href="pages/sobre.html">Sobre</a>
+                <a href="pages/video.html">Vídeo</a>
+                <a href="pages/contato.html">Contato</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechSenai Loja de Tecnologia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script JS Externo -->
+    <script src="script.js"></script>
+</body>
+
+</html>

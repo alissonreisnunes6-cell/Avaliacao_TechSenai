@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | TechSenai Loja de Tecnologia</title>
+    <!-- Fonte Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Externo Compartilhado -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">⚡</span>Tech<span class="logo-highlight">[SENAI]</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="produtos.html" class="active-link">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="video.html">Vídeo</a></li>
+                    <li><a href="contato.html" class="btn-nav">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <!-- Cabeçalho Interno da Página de Produtos -->
+    <section class="page-banner">
+        <div class="container">
+            <span class="badge">Catálogo Oficial 2026</span>
+            <h1>Nossos <span class="text-highlight">Produtos</span></h1>
+            <p>Explore nossa linha completa de hardware, periféricos e equipamentos de alta performance com garantia e entrega rápida.</p>
+        </div>
+    </section>
+
+    <!-- Barra de Filtros Rápidos -->
+    <section class="catalog-section">
+        <div class="container">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="todos">Todos os Produtos</button>
+                <button class="filter-btn" data-filter="computadores">Computadores</button>
+                <button class="filter-btn" data-filter="perifericos">Periféricos</button>
+                <button class="filter-btn" data-filter="monitores">Monitores</button>
+                <button class="filter-btn" data-filter="audio">Áudio &amp; Streaming</button>
+            </div>
+
+            <!-- Grid de Produtos (6 Cards Completos) -->
+            <div class="products-grid" id="catalogGrid">
+                
+                <!-- Card 1 -->
+                <article class="product-card" data-category="computadores">
+                    <div class="product-img">
+                        <span class="stock-tag">Em Estoque</span>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_748727-MLB80036105643_102024-O.webp" alt="Workstation TechSenai Pro X1">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Computadores</span>
+                        <h3>Workstation TechSenai Pro X1</h3>
+                        <p>Processador 16-Core, 64GB RAM DDR5, SSD NVMe 2TB e GPU dedicada para IA e renderização 3D.</p>
+                        <div class="product-footer">
+                            <span class="price">R$ 8.490,00</span>
+                            <button class="btn-buy" data-product="Workstation TechSenai Pro X1">Comprar Agora</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="product-card" data-category="perifericos">
+                    <div class="product-img">
+                        <span class="stock-tag">Mais Vendido</span>
+                        <img src="https://images.tcdn.com.br/img/img_prod/406359/teclado_mecnico_60_switches_brown_63_teclas_abnt2_5_20251228162612_be36ae78c018.jpg" alt="Teclado Mecânico RGB">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Periféricos</span>
+                        <h3>Teclado Mecânico RGB Switch Blue</h3>
+                        <p>Chassi em alumínio aeroespacial, teclas Double-Shot PBT, anti-ghosting completo e cabo removível USB-C.</p>
+                        <div class="product-footer">
+                            <span class="price">R$ 459,90</span>
+                            <button class="btn-buy" data-product="Teclado Mecânico RGB Switch Blue">Comprar Agora</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="product-card" data-category="monitores">
+                    <div class="product-img">
+                        <span class="stock-tag">Frete Grátis</span>
+                        <img src="https://www.adrenaline.com.br/wp-content/uploads/2022/11/monitor-curvo-lg-frente.jpg" alt="Monitor Ultrawide 34">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Monitores</span>
+                        <h3>Monitor Ultrawide 34" 165Hz</h3>
+                        <p>Tela curva WQHD, painel Fast IPS com 1ms (GtG), HDR400 e cobertura de cores 99% sRGB.</p>
+                        <div class="product-footer">
+                            <span class="price">R$ 2.799,00</span>
+                            <button class="btn-buy" data-product="Monitor Ultrawide 34 165Hz">Comprar Agora</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="product-card" data-category="perifericos">
+                    <div class="product-img">
+                        <span class="stock-tag">Lançamento</span>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZkv82g5Zv21vTw2JiJJ3cqWtGzG26hFXZBOJ6FDQvRRlPPbgUOzLqkfYY&s=10" alt="Mouse Gamer Wireless Pro">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Periféricos</span>
+                        <h3>Mouse Wireless Ultra-Light 26K DPI</h3>
+                        <p>Peso ultraleve de 58g, sensor óptico de alta precisão, switches ópticos e bateria de até 80 horas.</p>
+                        <div class="product-footer">
+                            <span class="price">R$ 349,90</span>
+                            <button class="btn-buy" data-product="Mouse Wireless Ultra-Light 26K DPI">Comprar Agora</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="product-card" data-category="audio">
+                    <div class="product-img">
+                        <span class="stock-tag">Em Estoque</span>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBdkvQ3MtCTBT4yyfHshNo88FJVoFlrLyU5epp6QMr7w&s=10" alt="Headset Studio Pro 7.1">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Áudio &amp; Streaming</span>
+                        <h3>Headset Studio Surround 7.1</h3>
+                        <p>Drivers de neodímio de 50mm, almofadas em espuma viscoelástica e microfone com cancelamento de ruído.</p>
+                        <div class="product-footer">
+                            <span class="price">R$ 529,00</span>
+                            <button class="btn-buy" data-product="Headset Studio Surround 7.1">Comprar Agora</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="product-card" data-category="computadores">
+                    <div class="product-img">
+                        <span class="stock-tag">Oferta</span>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBztPBrCUNwadRDmbzxtSyYyQQRsUFv-tPEk9f0ERw3w&s=10" alt="Notebook DevBook 15">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Computadores</span>
+                        <h3>Notebook DevBook Pro 15.6"</h3>
+                        <p>Chassi metálico ultrafino, 32GB de memória unificada, tela antirreflexo Full HD e teclado retroiluminado.</p>
+                        <div class="product-footer">
+                            <span class="price">R$ 6.199,00</span>
+                            <button class="btn-buy" data-product="Notebook DevBook Pro 15.6">Comprar Agora</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Notificação Flutuante (Toast) ao clicar no botão de ação -->
+    <div id="toastNotification" class="toast"></div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">⚡Tech<span class="logo-highlight">[SENAI]</span></a>
+                <p>Tecnologia e inovação ao seu alcance.</p>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="video.html">Vídeo</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechSenai Loja de Tecnologia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script JS Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
